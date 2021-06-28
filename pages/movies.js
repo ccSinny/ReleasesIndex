@@ -3,6 +3,7 @@ import Head from "next/head";
 import MovieCard from "../components/MovieCard";
 import React from "react";
 import { request, gql } from "graphql-request";
+import { SimpleGrid } from '@chakra-ui/react';
 
 function Movies({ movies }) {
   console.log(movies);
@@ -13,11 +14,12 @@ function Movies({ movies }) {
           <title>Movies</title>
         </Head>
 
-        <div>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 3, }} spacing={5}>
           {movies.map((movie) => (
             <MovieCard movie={movie} />
           ))}
-        </div>
+        </SimpleGrid>
+        
       </Container>
     </React.Fragment>
   );
@@ -27,7 +29,7 @@ const MOVIES_QUERY = gql`
   query MyQuery {
     movies {
       id
-      description
+      synopsis
       releaseDate
       title
       genre

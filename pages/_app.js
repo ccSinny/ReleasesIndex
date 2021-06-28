@@ -2,7 +2,8 @@ import React from 'react'
 import { ChakraProvider, ColorModeProvider, useColorMode } from '@chakra-ui/react'
 import customTheme from '../styles/theme'
 import { Global, css } from '@emotion/react'
-//import { prismLightTheme, prismDarkTheme } from '../styles/prism'
+import "@fontsource/montserrat/400.css"
+import "@fontsource/montserrat/700.css"
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode()
@@ -17,7 +18,7 @@ const GlobalStyle = ({ children }) => {
             color: #fefefe;
           }
           ::-moz-selection {
-            background: #ffb7b7;
+            background: #2D3748;
             color: #fefefe;
           }
           html {

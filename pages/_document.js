@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { GoogleFonts } from 'next-google-fonts'
 import { ColorModeScript } from '@chakra-ui/react'
 
 class MyDocument extends Document {
@@ -11,7 +10,6 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <GoogleFonts href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" />
         <Head />
         <body>
         <ColorModeScript />

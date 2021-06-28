@@ -21,6 +21,7 @@ export default function Index() {
         <title>Watching In Order</title>
       </Head>
       <Stack
+        
         as="main"
         spacing={8}
         justifyContent="center"
@@ -35,7 +36,7 @@ export default function Index() {
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Heading mb={2}>For nerds and weirdos..</Heading>
+          <Heading mb={2} paddingTop="15px">For nerds and weirdos..</Heading>
           <Text color={colorSecondary[colorMode]}>Please select from the movies or TV shows listed below, or search to specifically find what you want to watch. </Text>
         </Flex>
       </Stack>

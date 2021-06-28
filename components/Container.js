@@ -14,8 +14,8 @@ const Container = ({ children }) => {
     const { colorMode } = useColorMode()
 
     const bgColor = {
-        light: '#E2E8F0',
-        dark: '#171717'
+        light: 'transparent',
+        dark: 'transparent'
     }
 
     const color = {
@@ -46,7 +46,7 @@ const Container = ({ children }) => {
                 minWidth="356px"
                 width="100%"
                 borderRadius="25px"
-                bg={bgColor[colorMode]}
+                bg='#171717'
                 as="nav"
                 px={[2, 6, 6]}
                 py={2}
