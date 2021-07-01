@@ -8,6 +8,7 @@ import {
 } from '@chakra-ui/react'
 
 import Container from '../components/Container'
+import SearchModal from '../components/SearchModal'
 
 export default function Index() {
   const { colorMode } = useColorMode()
@@ -36,10 +37,11 @@ export default function Index() {
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Heading mb={2} paddingTop="15px">For nerds and weirdos..</Heading>
-          <Text color={colorSecondary[colorMode]}>Please select from the movies or TV shows listed below, or search to specifically find what you want to watch. </Text>
+          <Heading mb={2} paddingTop="15px">..</Heading>
+          <Text color={colorSecondary[colorMode]}>.. </Text>
         </Flex>
       </Stack>
     </Container>
+    
   )
 }

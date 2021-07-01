@@ -28,7 +28,8 @@ function MovieCard({ movie }) {
         {showDescription ? (
           <p>{movie.synopsis}</p>
         ) : (
-          <Button
+          //#FIXIT need to make button stay and not disappear
+          <Button 
             onClick={() => setShowDescription(true)}
             variant="outline"
             colorScheme="blue"
