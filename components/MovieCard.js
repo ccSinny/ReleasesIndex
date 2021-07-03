@@ -6,7 +6,7 @@ function MovieCard({ movie }) {
   const [showDescription, setShowDescription] = useState(false);
   
   return (
-    <Box p='10px' m='auto' maxH='800px' w='60%' fontFamily='Montserrat' border='5px solid' borderColor='rgba(143, 183, 241, 0.3)' borderRadius='20px' bgColor='#171717'>
+    <Box p='10px' m='auto' maxH='800px' w='auto' fontFamily='Montserrat' border='5px solid' borderColor='rgba(143, 183, 241, 0.3)' borderRadius='20px' bgColor='#171717'>
       <Stack
         direction="column"
         spacing={2}

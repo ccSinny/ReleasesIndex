@@ -14,7 +14,7 @@ function Movies({ movies }) {
           <title>Movies</title>
         </Head>
 
-        <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={5}>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={2}>
           {movies.map((movie) => (
             <MovieCard movie={movie} />
           ))}
