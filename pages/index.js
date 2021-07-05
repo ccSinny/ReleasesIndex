@@ -37,8 +37,8 @@ export default function Index() {
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Heading mb={2} paddingTop="15px">..</Heading>
-          <Text color={colorSecondary[colorMode]}>.. </Text>
+          <Heading mb={2} paddingTop="15px">For entertainment lovers..</Heading>
+          <Text color={colorSecondary[colorMode]}>Please select from the movies or TV shows listed below, or search to specifically find what you want to watch. </Text>
         </Flex>
       </Stack>
     </Container>

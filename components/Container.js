@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 
 import DarkModeSwitch from "../components/DarkModeSwitch";
 import SearchButton from "./SearchButton";
+import Footer from "./Footer";
 
 const Container = ({ children }) => {
   const { colorMode } = useColorMode();
@@ -89,6 +90,7 @@ const Container = ({ children }) => {
       </StickyNav>
       <Flex
         as="main"
+        minH="calc(100vh - 200px)"
         justifyContent="center"
         flexDirection="column"
         bg={bgColor[colorMode]}
@@ -98,6 +100,7 @@ const Container = ({ children }) => {
       >
         {children}
       </Flex>
+      <Footer />
     </>
   );
 };
