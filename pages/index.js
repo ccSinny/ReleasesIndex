@@ -8,7 +8,6 @@ import {
 } from '@chakra-ui/react'
 
 import Container from '../components/Container'
-import SearchModal from '../components/SearchModal'
 
 export default function Index() {
   const { colorMode } = useColorMode()
