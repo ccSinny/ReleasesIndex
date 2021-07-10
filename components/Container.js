@@ -72,14 +72,24 @@ const Container = ({ children }) => {
               Movies
             </Button>
           </NextLink>
-          <NextLink href="/TVshows" passHref>
+          <NextLink href="/tvshows" passHref>
             <Button
               as="a"
               variant="ghost"
               p={[1, 2, 4]}
               _hover={{ backgroundColor: navHoverBg[colorMode] }}
             >
-              TV Shows
+              Tv Shows
+            </Button>
+          </NextLink>
+          <NextLink href="/shareduniverses" passHref>
+            <Button
+              as="a"
+              variant="ghost"
+              p={[1, 2, 4]}
+              _hover={{ backgroundColor: navHoverBg[colorMode] }}
+            >
+              Shared Universes
             </Button>
           </NextLink>
         </Box>
