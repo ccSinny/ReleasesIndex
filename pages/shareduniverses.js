@@ -11,7 +11,7 @@ function SharedUniverses() {
         <Head>
           <title>Shared Universes</title>
         </Head>
-        <Text fontSize="5xl" textAlign="center" as="ins">Shared Universes</Text>
+        <Text fontSize="5xl" textAlign="center" as="ins" color="blue.500" fontWeight="700">Shared Universes</Text>
       </Container>
     </React.Fragment>
   );

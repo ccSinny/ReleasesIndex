@@ -11,7 +11,7 @@ function TVshows() {
         <Head>
           <title>TV Shows</title>
         </Head>
-        <Text fontSize="5xl" textAlign="center" as="ins">TV Shows</Text>
+        <Text fontSize="5xl" textAlign="center" as="ins" color="blue.500" fontWeight="700">TV Shows</Text>
       </Container>
     </React.Fragment>
   );

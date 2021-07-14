@@ -9,11 +9,12 @@ function Movies({ movies }) {
   console.log(movies);
   return (
     <React.Fragment>
+      
       <Container>
         <Head>
           <title>Movies</title>
         </Head>
-        <Text fontSize="5xl" textAlign="center" as="ins">Movies</Text>
+        <Text fontSize="5xl" textAlign="center" as="ins" color="blue.500" fontWeight="700">Movies</Text>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={2}>
           {movies.map((movie) => (
             <MovieCard movie={movie} />
