@@ -16,6 +16,7 @@
     "framer-motion": "^4.1.17",
     "graphql": "^15.5.0",
     "graphql-request": "^3.4.0",
+    "lodash": "^4.17.21",
     "next": "10.2.3",
     "next-google-fonts": "^2.2.0",
     "react": "17.0.2",

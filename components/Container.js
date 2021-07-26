@@ -100,7 +100,6 @@ const Container = ({ children }) => {
       </StickyNav>
       <Flex
         as="main"
-        minH="calc(100vh - 200px)"
         justifyContent="center"
         flexDirection="column"
         bg={bgColor[colorMode]}

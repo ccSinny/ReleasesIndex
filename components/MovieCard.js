@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Stack, Divider, Text, Button, Box } from "@chakra-ui/react";
+import { Stack, Divider, Text, Button, Box, Link } from "@chakra-ui/react";
 import React, { useState } from "react";
 
 function MovieCard({ movie }) {
@@ -47,7 +47,7 @@ function MovieCard({ movie }) {
             )}
           </Text>
         </h2>
-        <div>
+        <Box h="auto" w="auto" align="center">
           {showDescription && <p>{movie.synopsis}</p>}
           <Button
             onClick={toggleDescriptionHandler}
@@ -55,9 +55,12 @@ function MovieCard({ movie }) {
             colorScheme="blue"
             p={[1, 2, 4]}
           >
-            Synopsis
+            {showDescription ? 'Hide Synopsis' : 'Show Synopsis'}
           </Button>
-        </div>
+          <Text> {movie.rating}/5
+            <Link href=""> Review</Link>
+          </Text>
+        </Box>
       </Stack>
     </Box>
   );
